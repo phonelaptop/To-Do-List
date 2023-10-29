@@ -1,0 +1,9 @@
+/* #container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+} */
+
+.imaage {
+    width: 30px
+}
