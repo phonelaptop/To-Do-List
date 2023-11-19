@@ -15,11 +15,12 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "/public/index.html"));
 });
 
+app.get('/todolist', (req, res) => {
+    res.json(contener);
+});
+
 app.post("/todolist", (req, res) => {
-    console.log(req.body);
-
     contener.push(req.body)
-
     res.json(contener);
 });
 

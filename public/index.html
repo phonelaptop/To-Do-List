@@ -8,12 +8,29 @@
   </head>
 
   <body>
-    <h1>Jake's To do List</h1>
+    <div class="header">
+      <h1>Jake's To do List</h1>
+      <img class="immage" src="https://cdn-icons-png.flaticon.com/512/3330/3330300.png">
+    </div>
     <input id="assignment" placeholder="Assignment Name" />
+    <textarea id="description" placeholder="description" > </textarea>
     <input id="date" type="date"  placeholder="Due Date" />
     <button id="guess">submit</button>
 
-    <div id="container"></div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Date</th>
+          <th>Delete</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody id="container">
+        <!-- suff goes here -->
+      </tbody>
+    </table>
   </body>
   <script src="./scripts.js"></script>
 </html>
